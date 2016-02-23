@@ -158,6 +158,32 @@ class BigPictureViewController : UIViewController,UIActionSheetDelegate
         let alertView = UIActionSheet(title: nil, delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: "保存")
         alertView.showInView(self.view)
     }
+
+    internal func sharePictureToWeixin() {
+        let message = WXMediaMessage.message()
+//        [message setThumbImage:[UIImage imageNamed:@"res5thumb.png"]];
+//        
+//        WXImageObject *ext = [WXImageObject object];
+//        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"res5thumb" ofType:@"png"];
+//        NSLog(@"filepath :%@",filePath);
+//        ext.imageData = [NSData dataWithContentsOfFile:filePath];
+//        
+//        //UIImage* image = [UIImage imageWithContentsOfFile:filePath];
+//        UIImage* image = [UIImage imageWithData:ext.imageData];
+//        ext.imageData = UIImagePNGRepresentation(image);
+//        
+//        //    UIImage* image = [UIImage imageNamed:@"res5thumb.png"];
+//        //    ext.imageData = UIImagePNGRepresentation(image);
+//        
+//        message.mediaObject = ext;
+//        
+//        SendMessageToWXReq* req = [[[SendMessageToWXReq alloc] init]autorelease];
+//        req.bText = NO;
+//        req.message = message;
+//        req.scene = _scene;
+//        
+//        [WXApi sendReq:req];
+    }
     
     internal func dismissSelf(sender:CustomizedTapGestureRecognizer)
     {

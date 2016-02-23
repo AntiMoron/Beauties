@@ -33,6 +33,7 @@
 		665FB1481C76FF2500EE3360 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FB1471C76FF2500EE3360 /* libc++.tbd */; };
 		665FB14A1C76FF2D00EE3360 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FB1491C76FF2D00EE3360 /* libz.1.2.5.tbd */; };
 		665FB14D1C77002C00EE3360 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FB14C1C77002C00EE3360 /* UIKit.framework */; };
+		665FB14F1C7704DB00EE3360 /* BridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 665FB14E1C7704DB00EE3360 /* BridgingHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		665FB1491C76FF2D00EE3360 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		665FB14B1C76FFAF00EE3360 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		665FB14C1C77002C00EE3360 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		665FB14E1C7704DB00EE3360 /* BridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgingHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				665FB1051C76FD2400EE3360 /* LaunchScreen.storyboard */,
 				665FB1081C76FD2400EE3360 /* Info.plist */,
 				665FB14B1C76FFAF00EE3360 /* BridgingHeader.h */,
+				665FB14E1C7704DB00EE3360 /* BridgingHeader.m */,
 			);
 			path = Beauties;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			files = (
 				665FB1271C76FDC800EE3360 /* GallaryContainerView.swift in Sources */,
 				665FB1281C76FDC800EE3360 /* GallaryViewController.swift in Sources */,
+				665FB14F1C7704DB00EE3360 /* BridgingHeader.m in Sources */,
 				665FB1261C76FDC800EE3360 /* UIImage+Network.swift in Sources */,
 				665FB0FF1C76FD2400EE3360 /* ViewController.swift in Sources */,
 				665FB11F1C76FDBB00EE3360 /* BigPictureViewController.swift in Sources */,
@@ -466,14 +470,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Beauties/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/WeiXinSDK1.6.2",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.Antimoron.Beauties;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.Antimoron.Beauties532;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Beauties/BridgingHeader.h;
 			};
 			name = Debug;
@@ -483,14 +489,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Beauties/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/WeiXinSDK1.6.2",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.Antimoron.Beauties;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.Antimoron.Beauties532;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Beauties/BridgingHeader.h;
 			};
 			name = Release;

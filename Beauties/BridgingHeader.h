@@ -11,4 +11,7 @@
 #import <UIKit/UIKit.h>
 #import "WXApi.h"
 
+extern WXMediaMessage* getWXSharedMessage();
+extern WXImageObject* getWXSharedImageObject();
+
 #endif /* BridgingHeader_h */
